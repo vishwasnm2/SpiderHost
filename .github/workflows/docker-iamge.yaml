@@ -14,4 +14,7 @@ jobs:
       run: docker build . --file Dockerfile --tag ubt
       
     - name: Run Docker Image
-      run: docker run -itd ubuntu    
+      run: |
+        docker run -itd ubuntu
+        apt-get install default-jdk
+        apt-get install oracle-java11-installer
