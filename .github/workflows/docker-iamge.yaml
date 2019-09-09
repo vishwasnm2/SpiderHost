@@ -12,3 +12,6 @@ jobs:
     - uses: actions/checkout@v1
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag ubt
+      
+    - name: Run Docker Image
+      run: docker run -itd ubuntu    
