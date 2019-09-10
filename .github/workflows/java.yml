@@ -21,6 +21,7 @@ jobs:
       
     - name: Git Copy
       run: |
+        mkdir SpiderHost
         git clone https://github.com/PramodhKumarM97/SpiderHost.git
         git add demo.war
         git commit added demo.war
