@@ -20,7 +20,8 @@ jobs:
       run: cp demo.war demo1.war
       
     - name: Git Copy
-      run: git clone https://github.com/PramodhKumarM97/SpiderHost.git
-      run: git add demo.war
-      run: git commit added demo.war
-      run: git push origin master
+      run: |
+        git clone https://github.com/PramodhKumarM97/SpiderHost.git
+        git add demo.war
+        git commit added demo.war
+        git push origin master
