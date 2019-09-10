@@ -19,5 +19,8 @@ jobs:
     - name: Copy file built
       run: cp demo.war demo1.war
       
-    - name: List files
-      run: ls
+    - name: Git Copy
+      run: git clone https://github.com/PramodhKumarM97/SpiderHost.git
+      run: git add demo.war
+      run: git commit added demo.war
+      run: git push origin master
