@@ -17,4 +17,4 @@ jobs:
       run: jar cvf demo.war .
       
     - name: Deploy
-      run: curl -T "demo.war" "http://admin:123456@192.168.1.7:8080/manager/text/deploy?path=/myapp&update=true"
+      run: curl -T "demo.war" "http://admin:123456@7725a065.ngrok.io/manager/text/deploy?path=/myapp&update=true"
