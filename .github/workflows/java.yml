@@ -18,11 +18,3 @@ jobs:
       
     - name: Copy file built
       run: cp demo.war demo1.war
-      
-    - name: Git Copy
-      run: |
-        mkdir SpiderHost
-        git clone https://github.com/PramodhKumarM97/SpiderHost.git
-        git add demo.war
-        git commit added demo.war
-        git push origin master
