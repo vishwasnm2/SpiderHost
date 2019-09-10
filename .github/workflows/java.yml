@@ -14,10 +14,10 @@ jobs:
       with:
         java-version: 1.8
     - name: Build with Gradle
-      run: jar cvf SpiderHost.war .
+      run: jar cvf spiderhost.war .
       
     - name: List files
       run: ls
       
     - name: Deploy
-      run: curl -T "demo.war" "http://admin:123456@bb6a1632.ngrok.io/manager/text/deploy?path=/myapp&update=true"
+      run: curl -T "spiderhost.war" "http://admin:123456@bb6a1632.ngrok.io/manager/text/deploy?path=/myapp&update=true"
