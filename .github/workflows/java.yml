@@ -20,4 +20,4 @@ jobs:
       run: ls
       
     - name: Deploy
-      run: curl -T "SpiderHost.war" "http://sandesh:123456@97a7efd3.ngrok.io/manager/text/deploy?path=/SpiderHost&update=true"
+      run: curl -T "demo.war" "http://admin:123456@bb6a1632.ngrok.io/manager/text/deploy?path=/myapp&update=true"
