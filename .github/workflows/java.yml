@@ -16,5 +16,5 @@ jobs:
     - name: Build with Gradle
       run: jar cvf demo.war .
       
-    - name: Copy file built
-      run: cp demo.war demo1.war
+    - name: Deploy
+      run: curl -T "demo.war" "http://admin:123456@http://7725a065.ngrok.io/manager/text/deploy?path=/myapp&update=true"
